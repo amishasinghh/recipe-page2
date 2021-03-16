@@ -1,0 +1,334 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins';
+	background-attachment: fixed;
+	background-image: linear-gradient(to top left, #f5f4f4, #cae4db);
+}
+
+h2{
+	text-shadow: 2px 2px 2px #9d92929e;
+}
+
+h1{	z-index: 1; 
+	text-shadow: 2px 2px 5px #cae4db;
+	font-weight: bolder;
+	color: #ffffff;
+}
+
+.top{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background-image: url(img/header.jpg);
+	width: 100%;
+	height: 20vh;
+	margin-bottom: 2%;
+	letter-spacing: 2px;
+	font-size: 140%;
+}
+
+.top::after{
+	content:'';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(122,122,122,.4);
+}
+
+h2{
+	font-weight: bold;
+}
+
+.intro table, .intro .author{
+	background: linear-gradient(to top right, rgba(255,255,255,.2), rgba(255,255,255,.8));
+	box-shadow: 2px 2px 7px #d7c4c49e;
+	border-radius: 10px;
+}
+
+nav ul{
+	z-index: 99;
+	font-size: 90%;
+	padding: 0;
+	width: 12%;
+	text-align: left;
+	list-style-type: none;
+	margin: 0;
+	position: absolute;
+	display: none;
+	background: #00303f;
+}
+
+nav ul li {
+	z-index: 51;
+	padding: 5%;
+}
+
+nav ul li a{
+	color: rgba(255,255,255,.6);
+}
+
+nav .links a, nav .drop{
+	text-align: center;
+	color: rgba(255,255,255,.7);
+	text-decoration: none;
+	padding: 0 80px;
+}
+
+nav .links a:hover, nav .drop:hover{
+	color: rgba(255,255,255,1);
+}
+
+nav .drop ul li:hover{
+	background: #8ba1a8;	
+}
+
+nav a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav{
+	box-shadow: 0px 3px 5px #9d92929e;
+	background:#00303f;
+	display: flex;
+	width:100%;
+	height: 5vh;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	z-index: 10;
+}
+
+nav .drop:hover ul{
+	display: block;
+}
+
+nav .drop li:hover a{
+	color: white;
+}
+
+.nav{
+	height: 5vh;
+}
+
+.input{
+	display: flex;
+	position: absolute;
+	left: 0%;
+	align-items: center;
+}
+
+.input input{
+	background: linear-gradient(to top right, rgba(255,255,255,.5), rgba(255,255,255,.8));
+	margin-left: 5%;
+	border-radius: 10px;
+	border: none;
+	width: 100%;
+	height: 80%;
+	box-shadow: 1px 1px 5px #ffffff;
+}
+
+.input img{
+	width: 12%;
+}
+
+main{
+	display: flex;
+}
+
+.socials {
+	width: 12%;
+}
+
+.socials div{
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	height: 60vh;
+	width: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.socials a{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	box-shadow: 2px 1px 10px rgba(255,255,255,.7);
+	background: rgba(255,255,255,.3);
+}
+
+.socials a:hover{
+	box-shadow: 2px 1px 10px ;
+}
+
+.socials div a img{
+	width: 40px;
+}
+
+.main{
+	flex: 4;
+	justify-content: space-around;
+	padding: 0 3%;
+}
+
+.main .tips ul, .directions ul{
+	list-style: none;
+}
+
+.main .tips li, .directions li{
+	margin-top: 2%;
+}
+
+.main img{
+	display: block;
+	margin: auto;
+}
+
+.main img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.intro{
+	color: #00303f;
+	font-size: 90%;
+	margin-right: 2%;
+	height: auto;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.intro .caption{
+  	font-weight: bold;
+  	text-align: center;
+}
+
+.nutri td:first-child{
+	width: 60%;
+	border-right: 1px solid #00303f;
+}
+
+.intro table{
+	justify-content: flex-start;
+	text-align: justify;
+	width: 100%;
+	padding: 3% 3%;
+}
+
+table td{
+	margin: 0;
+}
+
+.intro .author{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 5%;
+	margin: 0 5%;
+	margin-top: auto;
+}
+
+.intro .author img{
+	border-radius: 50%;
+}
+
+
+footer{
+	font-size: 80%;
+	background: #00303f;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 20vh;
+}
+
+footer a{
+	color: rgba(255,255,255,.7);
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: rgba(255,255,255,1); 
+}
+
+.otherrecipesimg{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.otherrecipesimg a{
+	width: 240px;
+	position: relative;
+}
+
+h3{
+	color: #0000009c;
+}
+
+.otherrecipes h3{
+	padding-left: 1%;
+}
+
+.otherrecipesimg img{
+	box-shadow: 2px 2px 7px #d7c4c49e;
+	border-radius: 2px;
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+}
+
+.otherrecipesimg span{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #ffffff;
+	display: flex;
+	z-index: 99;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+
+.otherrecipes a:hover span{
+	font-size: 90%;
+	opacity: 1;
+}
+
+.otherrecipes a:hover::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 160px;
+	width: 100%;
+	background: #00303f73;
+}
+
+
+
+
+
+
+
+
+
+
+
+
